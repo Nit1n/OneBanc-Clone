@@ -25,12 +25,15 @@ let features = document.querySelector('.features') ;
 let num = words.length ; 
 let ftArray = [] ; 
 let currentfeature = 0 ; 
+let sources= ['1X401dhL5fSixdMl5u_Kdr0au6fxeOmMo' , '1meiUcD_qvrhWPrqj_pKcjv4Vt3Bm3hKm' , '12_4fla_QgCCU8AikPnc1Im_obAWv5HJu',
+'1np-70KxoTWU4oGhjaQhSiBDz6-FguHXb' ,'1Jyes-1oH6UfdUsKwsPzMr1Hh9dAJyJse' , '1b-O61Ttnj0hF70z5lQy8KdMU8qYUhg8J' , '1ZVreNnHk1c1Zjuk4gM6As5ZnuPGMPzxy',
+'1CgOctY31QtoA8Ft05VEJ04ShYUZeOpgt' , '1KRa1ibXBM8EuFUzX6K-iy42ImmzawGPy']
 
 for(let i = 0 ; i < num ; ++i){
     let outer = document.createElement('div') ;
     let mydiv = document.createElement('div') ;
     let footer = document.createElement('strong') ;
-    let src = 'images/' + words[i].toLowerCase() + '.png' ;  
+    let src = "https://drive.google.com/uc?export=view&id=" + sources[i] ;  
     mydiv.style.backgroundImage = `url(${src})` ; 
     mydiv.setAttribute('class' , 'icon') ; 
     footer.textContent = words[i][0] + words[i].substr(1).toLowerCase() ; 
@@ -52,7 +55,7 @@ let index = 0;
 function addfeatures(){
     for(let i = 0; i < 9 ; ++i){
         const mydiv = document.createElement('div') ; 
-        let src = 'images/' + words[i].toLowerCase() + '.png' ;  
+        let src = "https://drive.google.com/uc?export=view&id=" + sources[i]  ;  
         mydiv.style.backgroundImage = `url(${src})` ; 
         mydiv.setAttribute('class' , 'icon') ; 
         mydiv.style.marginTop = "10px" ; 
@@ -79,7 +82,7 @@ for(let i = 0; i< 9 ; ++i){
     let outer = document.createElement('div') ;
     let mydiv = document.createElement('div') ;
     let footer = document.createElement('div') ;
-    let src = 'images/' + words[i].toLowerCase() + '.png' ;  
+    let src = "https://drive.google.com/uc?export=view&id=" + sources[i]  ;  
     mydiv.style.backgroundImage = `url(${src})` ; 
     mydiv.setAttribute('class' , 'icon') ; 
     footer.textContent = words[i][0] + words[i].substr(1).toLowerCase() ; 
